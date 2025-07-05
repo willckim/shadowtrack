@@ -105,8 +105,16 @@ export default function App() {
     }
   };
 
+  const isDevMode = window.location.hostname.includes("vercel.app") && window.location.hostname.includes("dev");
+
   return (
     <Router>
+      {isDevMode && (
+        <div className="bg-yellow-300 text-black text-center py-2 font-semibold text-sm">
+          🚧 DEV MODE — This is a preview build. Changes here won’t affect the live site.
+        </div>
+      )}
+
       <Routes>
         <Route
           path="/"
@@ -147,7 +155,6 @@ export default function App() {
             )
           }
         />
-
         <Route path="/login" element={<Login onLogin={setUser} />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
