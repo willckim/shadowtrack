@@ -1,12 +1,54 @@
-# React + Vite
+# ShadowTrack 🩺✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ShadowTrack** is a minimalist shadowing log built for pre-meds — by a pre-med.
 
-Currently, two official plugins are available:
+Log your physician shadowing experiences, reflect, and let AI help you craft application-ready activity descriptions for AMCAS or TMDSAS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Clean interface to log hours, observations, and reflections
+- 🤖 GPT-4-powered **activity summary generator**
+- 🧠 AI-generated **insight analysis** (e.g., empathy, curiosity, resilience)
+- 🎨 Tone tuning for activity descriptions
+- 🗂 Soft-delete & trash system with restore
+- 📊 Shadowing hours summary table
+
+---
+
+### 📷 Screenshots
+
+Coming soon...
+
+---
+
+### 🔐 Tech Stack
+
+- React + Tailwind
+- Supabase Auth + Database
+- OpenAI GPT-4 (via API key)
+- Vite + GitHub + Vercel
+
+---
+
+### 🙋‍♂️ About the Creator
+
+Hi! I’m [William Kim](https://www.linkedin.com/in/william-c-kim/), a pre-med student building tools I wish I had earlier.
+
+This app was designed to make shadowing **less chaotic and more meaningful**. I use it daily and hope others will too.
+
+---
+
+### 📬 Contact
+
+Got suggestions or bugs?  
+DM me on [LinkedIn](https://www.linkedin.com/in/william-c-kim/) or open an issue.
+
+---
+
+### 🧠 Powered By
+
+- OpenAI GPT-4
+- Supabase
+- Vercel
