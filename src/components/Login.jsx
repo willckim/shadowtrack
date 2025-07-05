@@ -27,12 +27,10 @@ export default function Login({ onLogin }) {
   };
 
   const handleGoogleLogin = async () => {
-    const redirectTo = window.location.origin;
-
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${redirectTo}/`,
+        redirectTo: window.location.origin, // 👈 This makes dev & prod redirect work properly
       },
     });
 
