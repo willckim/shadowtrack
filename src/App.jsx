@@ -5,6 +5,7 @@ import ShadowingList from './components/ShadowingList';
 import ShadowingTable from './components/ShadowingTable';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import ProButton from './components/ProButton';
 import { supabase } from './supabaseClient';
 import logo from './assets/shadowtrack-logo.png';
 
@@ -122,12 +123,15 @@ export default function App() {
                       Built by a fellow pre-med. Log your shadowing hours, write reflections, and get AI-generated summaries ready for AMCAS or TMDSAS.
                     </p>
                   </div>
-                  <button
-                    onClick={handleLogout}
-                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-                  >
-                    Log Out
-                  </button>
+                  <div className="flex flex-col items-end gap-2">
+                    <ProButton />
+                    <button
+                      onClick={handleLogout}
+                      className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                    >
+                      Log Out
+                    </button>
+                  </div>
                 </div>
 
                 <ShadowingForm onAdd={addEntry} />
